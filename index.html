@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content ="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Steven Velasquez Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+
+    <div id="bannerex">
+        <nav>
+            <img src="Images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <i class="fas fa-x" onclick="closemenu()"></i>
+                </li>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <!----<nav>      
+                <img src="Images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <i class="fas fa-x" onclick="closemenu()"></i>
+                    </li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            ---->
+            <div class="header-text">
+                <p>
+                    Undergrad in Computer Science
+                </p>
+                <h1>Hi, I'm <span>Steven</span><br>from Miami, Florida</h1>
+            </div>
+        </div>
+    </div>
+
+<!-----------------------------About-------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/EE669B31-5DF1-499B-BCE2-BBCE5D8B5A79.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">
+                    About Me
+                </h1>
+                <p>
+                    Place holderPlace holderPlace holderPlace 
+                    holderPlace holderPlace holderPlace holderPlace
+                     holderPlace holderPlace holderPlace holderPlace 
+                     holderPlace holderPlace holderPlace holderPlace holderPlace holder
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">
+                        Skills
+                    </p>
+                    <p class="tab-links" onclick="opentab('experience')">
+                        Experience
+                    </p>
+                    <p class="tab-links" onclick="opentab('education')">
+                        Education
+                    </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Work Experience</span><br>Customer Service Staff</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <p>Florida International University</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------contact---------------->
+<div id="contact">
+    <div class="container"> 
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">
+                    Contact Me
+                </h1>
+                <p>
+                    <i class="fa-solid fa-paper-plane"></i> stevenvelaquez0923@outlook.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i> 305-479-7447
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/its_3teven/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-velasquez-95b465321/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="Images/INIT_FIU_RESUME_TEMPLATE.pdf" download class= "btn">Download Resume</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Steven. Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+    </body>
+</html>
