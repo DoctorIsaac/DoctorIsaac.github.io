@@ -15,13 +15,13 @@ body{
 
 }
 
-#bannerex {
-    background-color: #black; /* Dark background */
-    color: white;           /* White text */
-    padding: 5px 0;        /* Spacing */
-    text-align: center;     /* Center text */
-    font-size: 50px;        /* Font size */
+#bannerex{
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
 }
+
 
 #header{
     width: 100%;
@@ -52,10 +52,12 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    margin: 30px;
+    padding-bottom: 20px;
 }
 
 nav ul li a::after{
