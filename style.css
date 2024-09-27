@@ -119,9 +119,14 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
+    font-family: serif;
     font-size: 60px;
     font-weight: 600;
     color: white;
+}
+
+.sub-title aboutMeP{
+    padding: 5px;
 }
 
 .tab-titles{
