@@ -12,11 +12,14 @@ html{
 body{
     background: #080808;
     color: #fff;
-
+    size: 100vh;
 }
 
 .header1{   
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .column{
@@ -27,56 +30,115 @@ body{
     width: 70%;
 }
 
-.right{
-    width: 30%;
+@font-face {
+font-family: "font04";
+src: url(font/04b_30/04B_30__.TTF);
 }
 
-@font-face {
-    font-family: "Paskowy";
-    src: url(font/paskowy/Paskowy.ttf);
+.H1{
+    display: flex;
+    justify-content: left;
+    align-items: left   ;
+
+    font-family: vcrmono,sans-serif;
+    font-size: 25px;
+    margin-left: 15%;
+    color: rgba(255, 255, 255, 0.692);
+
 }
 
 .name{
-    font-family: Paskowy, sans-serif;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 250px;
-    color: rgb(52, 225, 255);
-    text-shadow: 
-    0 0 7px rgb(52, 225, 255),
-    0 0 10px rgb(52, 225, 255),
-    0 0 21px rgb(52, 225, 255);
-   /* 0 0 21px rgb(52, 225, 255),
-    0 0 42px rgb(52, 225, 255),
-    0 0 82px rgb(52, 225, 255),
-    0 0 92px rgb(52, 225, 255),
-    0 0 102px rgb(52, 225, 255),
-    0 0 151px rgb(52, 225, 255);*/
+    font-family: font04, sans-serif;
+    font-size: 50px;    
+    font-weight: bold;
+    display: flex;
+    margin-left: 15%;
 
-    
-
+    color: rgb(255, 255, 255);
 }
+
+.cursor{
+    font-family: daydream, sans-serif;
+    font-size: 75px;
+    display: inline-block;
+    width: 1px;
+    animation: blink 1.75s step-end infinite;
+    color: #00f7ffea;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0; 
+    }
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.me{
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%;
+    margin-right: 250px;
+}
+
+#banner{
+    height: 50px; /* Height of the banner line */
+    background-color: blue; /* Color of the banner */
+    width: 100%; /* Full width */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align it to the top of the navigation */
+    left: 0; /* Align it to the left edge */
+    z-index: -1; /* Send it to the back */
+}
+
+@font-face {
+    font-family: "vcrmono";
+    src: url(font/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
+    }
+
+#navigation {
+    text-align: center; /* Center the navigation below */
+    margin-top: 20px; /* Space above the navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange links in a row */
+    justify-content: center; /* Center links horizontally */
+}
+
+nav ul li {
+    margin-right: 30px; /* Space between links */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+nav ul li a {
+    font-family: vcrmono, sans-serif; /* Custom font */
+    font-size: 35px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Link color */
+    padding: 10px 15px; /* Padding for clickable area */
+    transition: background-color 0.3s; /* Smooth background change */
+    background-color: #01a6acea;
+}
+
+nav ul li a:hover {
+    background-color: #004c4e; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
 
 /*
-#bannerex{
-    background-color: #000000;
-    padding: 5px;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(Images/AD62C288-ECB7-4D36-B4DA-3379F2FE68E6.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.container{
-    padding: 10px 10%;
-}
-
 nav{
     display:flex;
     align-items: center;
