@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
     box-sizing: border-box;
 }
 
@@ -15,6 +15,49 @@ body{
 
 }
 
+.header1{   
+    display: flex;
+}
+
+.column{
+    float: left;
+}
+
+.left{
+    width: 70%;
+}
+
+.right{
+    width: 30%;
+}
+
+@font-face {
+    font-family: "Paskowy";
+    src: url(font/paskowy/Paskowy.ttf);
+}
+
+.name{
+    font-family: Paskowy, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 250px;
+    color: rgb(52, 225, 255);
+    text-shadow: 
+    0 0 7px rgb(52, 225, 255),
+    0 0 10px rgb(52, 225, 255),
+    0 0 21px rgb(52, 225, 255);
+   /* 0 0 21px rgb(52, 225, 255),
+    0 0 42px rgb(52, 225, 255),
+    0 0 82px rgb(52, 225, 255),
+    0 0 92px rgb(52, 225, 255),
+    0 0 102px rgb(52, 225, 255),
+    0 0 151px rgb(52, 225, 255);*/
+
+    
+
+}
+
+/*
 #bannerex{
     background-color: #000000;
     padding: 5px;
@@ -232,7 +275,7 @@ nav ul li a:hover::after{
 .copyright i{
     color: #C23B22;
 }
-
+*/
 /*----------CSS for Small Screen--------*/
 nav .fas{
     display: none;
