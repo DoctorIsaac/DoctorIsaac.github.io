@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /*font-family: 'Poppins', sans-serif;*/
     box-sizing: border-box;
 }
 
@@ -86,9 +85,12 @@ src: url(font/04b_30/04B_30__.TTF);
     margin-right: 250px;
 }
 
-/* Position the button at the top */
-/* Position the button at the top */
+.fa-bars{
+    color: white;
+}
+
 #menu-button {
+    font-family: vcrmono, sans-serif;
     position: fixed;
     top: 10px;
     left: 10px;
@@ -96,44 +98,44 @@ src: url(font/04b_30/04B_30__.TTF);
     border: none;
     cursor: pointer;
     font-size: 18px;
+    background-color: transparent;
+    color: white;
 }
 
 .nav-links {
     position: absolute;
-    top: 45px; /* Positioned below the button */
+    top: 45px; 
     left: 10px;
     background-color: transparent;
     padding: 0;
-    border: 1px solid #ccc;
     width: 150px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    opacity: 0; /* Fully transparent initially */
-    transition: opacity 0.4s ease; /* Animate opacity for the entire menu */
+    opacity: 0;
+    transition: opacity 0.4s ease; 
 }
 
-/* Remove bullet points and ensure vertical stacking */
+
 .nav-links ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
 }
 
-/* Delay for each link item */
+
 .nav-links li {
-    opacity: 0; /* Initially hide each link */
-    transform: translateY(-20px); /* Move each link slightly up initially */
-    transition: transform 0.4s ease, opacity 0.4s ease; /* Transition for each link */
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: transform 0.4s ease, opacity 0.4s ease; 
 }
 
-/* Stagger the animation using nth-child */
+
 .nav-links.show li:nth-child(1) {
     transition-delay: 0.1s;
-    transform: translateY(0); /* Move into place */
-    opacity: 1; /* Make it visible */
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .nav-links.show li:nth-child(2) {
-    transition-delay: 0.3s; /* Slightly delayed */
+    transition-delay: 0.3s; 
     transform: translateY(0);
     opacity: 1;
 }
@@ -144,23 +146,23 @@ src: url(font/04b_30/04B_30__.TTF);
     opacity: 1;
 }
 
-/* Hover effect on links */
+
 .nav-links a {
     text-decoration: none;
-    color: #333;
-    display: block; /* Ensure links take up full width */
+    color: #ffffff;
+    display: block; 
     font-size: 18px;
-    padding: 10px; /* Add padding for better spacing */
+    padding: 10px; 
 }
 
 .nav-links a:hover {
-    background-color: #ddd; /* Change background on hover */
+    background-color: #02eef6ea; 
 }
 
-/* When the menu itself is visible */
+
 .nav-links.show {
-    opacity: 1; /* Show the menu */
-    transition: opacity 0.4s ease; /* Ensure the menu container is visible first */
+    opacity: 1; 
+    transition: opacity 0.4s ease; 
 }
 
 
@@ -173,81 +175,20 @@ src: url(font/04b_30/04B_30__.TTF);
     }
 
 nav ul li a {
-    font-family: vcrmono, sans-serif; /* Custom font */
-    font-size: 35px; /* Font size */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Link color */
-    padding: 10px 15px; /* Padding for clickable area */
-    transition: background-color 0.3s; /* Smooth background change */
+    font-family: vcrmono, sans-serif; 
+    font-size: 35px; 
+    text-decoration: none; 
+    color: white; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
     background-color: #01a6acea;
 }
 
 nav ul li a:hover {
-    background-color: #004c4e; /* Change background on hover */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #004c4e;
+    border-radius: 5px;
 }
 
-
-/*
-nav{
-    display:flex;
-    align-items: center;
-    justify-content: content-between;
-    flex-wrap: wrap;
-}
-
-.logo{
-    width: 100px;
-}
-
-nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin: 10px 20px;
-}
-
-nav ul li a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    margin: 30px;
-    padding-bottom: 20px;
-}
-
-nav ul li a::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: #ffb300;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-}
-
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-    color: #000000;
-}
-
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-    color: rgb(0, 0, 0);
-    line-break: normal;
-}
-
-.header-text h1 span{
-    color: #ffb300;
-}
-
-/*----------About Me------------*/
 #about{
     padding: 80px 0px;
     color: white;
@@ -274,14 +215,9 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-    font-family: serif;
     font-size: 60px;
     font-weight: 600;
     color: white;
-}
-
-.sub-title aboutMeP{
-    padding: 5px;
 }
 
 .tab-titles{
@@ -334,13 +270,6 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
-.contact-left p i{
-    color: #ffb300;
-    margin-right: 15px;
-    margin-top: 20px;
-    font-size: 24px;
-}
-
 .social-icons i{
     margin-top: 30px;
 }
@@ -387,86 +316,8 @@ nav ul li a:hover::after{
 .copyright i{
     color: #C23B22;
 }
-*/
+
+
+
+
 /*----------CSS for Small Screen--------*/
-nav .fas{
-    display: none;
-}
-
-@media only screen and (max-width:600px){
-    .logo{
-        width: 75px;
-    }
-
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-text h1{
-        font-size: 30px;
-    }
-
-    nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul{
-        background: #000000;
-        position: fixed;
-        top: 0;
-        right: -130px;
-        width: 130px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-
-    nav ul li a{
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    nav .fas{
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-    }
-
-    .sub-title{
-        font-size: 40px;
-    }
-
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom: 30px;
-    }
-
-    .about-col-2{
-        font-size: 14px;
-    }
-
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    }
-    .contact-left{
-        flex-basis: 100%;
-    }
-
-    .copyright{
-        font-size: 14px;
-    }
-}
