@@ -36,115 +36,23 @@
     </ul>
 </nav>
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-            </div>
+<!--spacer-->
+<div class="spacer"></div>
 
-            <div class="about-col-2">
-                <h1 class="sub-title">
-                    About Me
-                </h1>
-                <p class="aboutMeP">
-                    I'm a first year undergraduate majoring in computer science. I'm passionate about the innerworkings of the 
-                    tech world, specifically machine learning. Unfortunately, I have not been able to develop my skills in this
-                    branch because I only have experience with web development and video game development.
-                </p>
-                <p>
-                    Currently, I'm focused on expanding my knowledge of CS in order to become well verse in all situations. I'm
-                    accomplishing this by putting myself out there through Hackathons, outreach programs, and side projects.
-                </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">
-                        Skills
-                    </p>
-                    <p class="tab-links" onclick="opentab('experience')">
-                        Experience
-                    </p>
-                    <p class="tab-links" onclick="opentab('education')">
-                        Education
-                    </p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
-                        <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
-                        <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Work Experience</span><br>Customer Service Staff</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <p>Florida International University</p>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="about" class="about-me">
+    <h1 class="about-title">About Me</h1>
+    <p class="about-description">
+        I'm a first-year undergraduate majoring in computer science. I'm passionate about the inner workings of the tech world, specifically machine learning. Unfortunately, I have not been able to develop my skills in this branch because I only have experience with web development and scratch "like" programming.
+    </p>
+    <p class="about-goal">
+        Currently, I'm focused on expanding my knowledge of computer science to become well-versed in all situations. I'm accomplishing this by putting myself out there through hackathons, outreach programs, and side projects.
+    </p>
 </div>
 
-<div id="contact">
-    <div class="container"> 
-        <div class="row">
-            <div class="contact-left">
-                <h1 class = "sub-title">
-                    Contact Me
-                </h1>
-                <p>
-                    <i class="fa-solid fa-paper-plane"></i> stevenvelaquez0923@outlook.com
-                </p>
-                <p>
-                    <i class="fa-solid fa-phone"></i> 305-479-7447
-                </p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/its_3teven/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/steven-velasquez-95b465321/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
 
-                <a href="Images/INIT_FIU_RESUME_TEMPLATE.pdf" download class= "btn">Download Resume</a>
 
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Steven. Made with <i class="fa-solid fa-heart"></i> </p>
-    </div>
-</div>
 
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
- 
 
 <!-- <div id="contact">
     <div class="container"> 
@@ -172,35 +80,7 @@
     <div class="copyright">
         <p>Copyright © Steven. Made with <i class="fa-solid fa-heart"></i> </p>
     </div>
-</div>
+</div> -->
 
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    } -->
-
-</script>
     </body> 
 </html>

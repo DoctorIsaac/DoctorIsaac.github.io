@@ -12,6 +12,7 @@ body{
     background: #080808;
     color: #fff;
     size: 100vh;
+    overflow: auto  ;
 }
 
 .header1{   
@@ -84,6 +85,12 @@ src: url(font/04b_30/04B_30__.TTF);
     border-radius: 50%;
     margin-right: 250px;
 }
+
+.blurred {
+    filter: blur(2px); 
+    transition: filter 0.75s ease;
+}
+
 
 .fa-bars{
     color: white;
@@ -166,9 +173,6 @@ src: url(font/04b_30/04B_30__.TTF);
 }
 
 
-
-
-
 @font-face {
     font-family: "vcrmono";
     src: url(font/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
@@ -189,84 +193,53 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-#about{
-    padding: 80px 0px;
-    color: white;
+
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+    transition: all 0.3s ease;
+    margin-bottom: 500px;
+    opacity: 0;
+    transform: translateY(50px);
+
+    background-color: #009196; 
+    padding: 100px;
+    border-radius: 10px; 
+    box-shadow: 0 0 30px rgba(0, 145, 150, 0.5), 
+                0 0 40px rgba(0, 145, 150, 0.4); 
+    transition: box-shadow 0.3s ease; 
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.about-me.active{
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.about-col-1{
-    flex-basis: 35%;
+.about-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: font04, sans-serif;
 }
 
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2{
-    flex-basis: 60%;
-
-}
-
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-}
-
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links{
-    margin-right: 30px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ffb300;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-}
-
-.tab-contents ul li{
-    list-style-type: none;
+.about-description, .about-goal {
     margin: 10px 0;
+    font-family: vcrmono, sans-serif;
+    text-align: center;
+    word-spacing: 5px;
+    
+    
 }
 
-.tab-contents ul li span{
-    color: #ffb300;
-    font-size: 14px;
-}
 
-.tab-contents{
-    display: none;
-}
 
-.tab-contents.active-tab{
-    display: block;
-}
 
-.contact-left{
+/* .contact-left{
     flex-basis: 35%;
 }
 
@@ -315,8 +288,11 @@ nav ul li a:hover {
 
 .copyright i{
     color: #C23B22;
-}
+} */
 
+.spacer {
+    height: 225px; /* Adjust the height as needed */
+}
 
 
 
